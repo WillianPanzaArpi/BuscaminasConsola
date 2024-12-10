@@ -20,6 +20,7 @@ src/
 |-- pruebas/
     |-- TableroTest.java
 
+El diagrama de clases se encuentra en este repositorio con el nombre de "BuscaminasConsola.umlcd.png"
 
 y ejecutar el proyecto, y cómo ejecutar las pruebas.
 1. para clonar el codigo: git clone https://github.com/WillianPanzaArpi/BuscaminasConsola.git
