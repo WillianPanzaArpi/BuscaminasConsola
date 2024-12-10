@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_RqmUQLaxEe-NO4GSsf5MxQ" name="BuscaminasConsola2">
+    <eAnnotations xmi:id="_R9L5ELaxEe-NO4GSsf5MxQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_R9L5EbaxEe-NO4GSsf5MxQ" source="codegen">
+        <details xmi:id="_R9L5EraxEe-NO4GSsf5MxQ" key="codegenDirectory" value="/BuscaminasConsola/src/main/java"/>
+        <details xmi:id="_SKKlILaxEe-NO4GSsf5MxQ" key="AssociatedSourceCode" value="/BuscaminasConsola/src/main/java/com/buscaminasconsola/BuscaminasConsola.java;1560596963/1;/BuscaminasConsola/src/main/java/controlador/Controlador.java;1763105424/1;/BuscaminasConsola/src/main/java/excepciones/GestorErrores.java;3335481332/1;/BuscaminasConsola/src/main/java/model/Celda.java;2839767025/1;/BuscaminasConsola/src/main/java/model/Tablero.java;1043439236/1;/BuscaminasConsola/src/main/java/vista/VistaConsola.java;1214087019/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_SDk08LaxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_SDk08baxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_SDk08raxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_SDlcALaxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_SDlcAbaxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_SDlcAraxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_SDlcA7axEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_SDlcBLaxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_SDlcBbaxEe-NO4GSsf5MxQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SDfVYLaxEe-NO4GSsf5MxQ" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_SDi_wLaxEe-NO4GSsf5MxQ" name="buscaminasconsola">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SEHAcLaxEe-NO4GSsf5MxQ" name="BuscaminasConsola">
+          <ownedComment xmi:id="_SG4noLaxEe-NO4GSsf5MxQ">
+            <body>*
+@author Willian</body>
+          </ownedComment>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SGvdsLaxEe-NO4GSsf5MxQ" name="main" specification="_SELR4LaxEe-NO4GSsf5MxQ">
+            <ownedParameter xmi:id="_SGvdsbaxEe-NO4GSsf5MxQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SGvdsraxEe-NO4GSsf5MxQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Scanner scanner = new Scanner(System.in);
+     Controlador controlador;
+
+     System.out.println(&quot;¿Desea iniciar un nuevo juego o cargar uno existente? (nuevo/cargar):&quot;);
+     String opcion = scanner.next();
+
+     try {
+         if (opcion.equals(&quot;nuevo&quot;)) {
+             controlador = new Controlador(10, 10, 10); // Tablero de 10x10 con 10 minas
+         } else {
+             System.out.println(&quot;Ingrese el nombre del archivo a cargar:&quot;);
+             String rutaArchivo = scanner.next();
+             controlador = new Controlador(rutaArchivo);
+         }
+
+         controlador.iniciarJuego();
+     } catch (Exception e) {
+         GestorErrores.manejarExcepcion(e);
+     }
+
+     scanner.close();
+ 
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_SELR4LaxEe-NO4GSsf5MxQ" name="main" isStatic="true" method="_SGvdsLaxEe-NO4GSsf5MxQ">
+            <ownedParameter xmi:id="_SELR4baxEe-NO4GSsf5MxQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEMgALaxEe-NO4GSsf5MxQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SDhxoLaxEe-NO4GSsf5MxQ" name="controlador">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SENHELaxEe-NO4GSsf5MxQ" name="Controlador">
+        <ownedComment xmi:id="_SG4nobaxEe-NO4GSsf5MxQ">
+          <body>*&#xD;
+@author Willian</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_SGg0MLaxEe-NO4GSsf5MxQ" name="tablero" visibility="private" type="_SEXfILaxEe-NO4GSsf5MxQ" association="_SG85ELaxEe-NO4GSsf5MxQ"/>
+        <ownedAttribute xmi:id="_SGiCULaxEe-NO4GSsf5MxQ" name="vista" visibility="private" isLeaf="true" type="_SEgpELaxEe-NO4GSsf5MxQ" isReadOnly="true" association="_SG-HMbaxEe-NO4GSsf5MxQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG09QLaxEe-NO4GSsf5MxQ" name="Controlador" specification="_SEOVMLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG09QbaxEe-NO4GSsf5MxQ" name="filas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG09QraxEe-NO4GSsf5MxQ" name="columnas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG09Q7axEe-NO4GSsf5MxQ" name="minas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG09RLaxEe-NO4GSsf5MxQ" type="_SENHELaxEe-NO4GSsf5MxQ" direction="return"/>
+          <language>java</language>
+          <body>this.tablero = new Tablero(filas, columnas, minas);&#xD;
+     this.vista = new VistaConsola();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG1kULaxEe-NO4GSsf5MxQ" name="Controlador" specification="_SEQKYLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG1kUbaxEe-NO4GSsf5MxQ" name="rutaArchivo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG1kUraxEe-NO4GSsf5MxQ" type="_SENHELaxEe-NO4GSsf5MxQ" direction="return"/>
+          <language>java</language>
+          <body>this.tablero = Tablero.cargarDesdeArchivoBinario(rutaArchivo);&#xD;
+     this.vista = new VistaConsola();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG1kU7axEe-NO4GSsf5MxQ" name="iniciarJuego" specification="_SEQxcLaxEe-NO4GSsf5MxQ">
+          <language>java</language>
+          <body>Scanner scanner = new Scanner(System.in);&#xD;
+     boolean juegoTerminado = false;&#xD;
+&#xD;
+     while (!juegoTerminado) {&#xD;
+         vista.mostrarTablero(tablero.getCeldas());&#xD;
+         vista.mostrarMensaje(&quot;Ingrese su acción (revelar/marcar/guardar/cargar) y posición (ejemplo: revelar A5):&quot;);&#xD;
+         String accion = scanner.next();&#xD;
+&#xD;
+         if (accion.equals(&quot;guardar&quot;)) {&#xD;
+             vista.mostrarMensaje(&quot;Ingrese el nombre del archivo para guardar:&quot;);&#xD;
+             String rutaArchivo = scanner.next();&#xD;
+             tablero.guardarEnArchivoBinario(rutaArchivo);&#xD;
+             continue;&#xD;
+         }&#xD;
+&#xD;
+         if (accion.equals(&quot;cargar&quot;)) {&#xD;
+             vista.mostrarMensaje(&quot;Ingrese el nombre del archivo para cargar:&quot;);&#xD;
+             String rutaArchivo = scanner.next();&#xD;
+             Tablero nuevoTablero = Tablero.cargarDesdeArchivoBinario(rutaArchivo);&#xD;
+             if (nuevoTablero != null) {&#xD;
+                 this.tablero = nuevoTablero;&#xD;
+             }&#xD;
+             continue;&#xD;
+         }&#xD;
+&#xD;
+         String posicion = scanner.next();&#xD;
+         try {&#xD;
+             int fila = posicion.charAt(0) - 'A'; // Convertir 'A'-'H' a índices 0-7&#xD;
+             int columna = Integer.parseInt(posicion.substring(1)) - 1; // Convertir '1'-'10' a índices 0-9&#xD;
+&#xD;
+             if (accion.equals(&quot;revelar&quot;)) {&#xD;
+                 if (tablero.getCeldas()[fila][columna].esMina()) {&#xD;
+                     vista.mostrarMensaje(&quot;¡BOOM! Has perdido.&quot;);&#xD;
+                     juegoTerminado = true;&#xD;
+                 } else {&#xD;
+                     tablero.getCeldas()[fila][columna].revelar();&#xD;
+                 }&#xD;
+             } else if (accion.equals(&quot;marcar&quot;)) {&#xD;
+                 tablero.getCeldas()[fila][columna].alternarMarca();&#xD;
+             }&#xD;
+         } catch (Exception e) {&#xD;
+             GestorErrores.manejarExcepcion(e);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     scanner.close();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_SEOVMLaxEe-NO4GSsf5MxQ" name="Controlador" method="_SG09QLaxEe-NO4GSsf5MxQ">
+          <eAnnotations xmi:id="_SEOVNLaxEe-NO4GSsf5MxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_SEOVNbaxEe-NO4GSsf5MxQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_SEOVMbaxEe-NO4GSsf5MxQ" name="filas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEOVMraxEe-NO4GSsf5MxQ" name="columnas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEOVM7axEe-NO4GSsf5MxQ" name="minas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEOVNraxEe-NO4GSsf5MxQ" type="_SENHELaxEe-NO4GSsf5MxQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEQKYLaxEe-NO4GSsf5MxQ" name="Controlador" method="_SG1kULaxEe-NO4GSsf5MxQ">
+          <eAnnotations xmi:id="_SEQKYraxEe-NO4GSsf5MxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_SEQKY7axEe-NO4GSsf5MxQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_SEQKYbaxEe-NO4GSsf5MxQ" name="rutaArchivo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEQKZLaxEe-NO4GSsf5MxQ" type="_SENHELaxEe-NO4GSsf5MxQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEQxcLaxEe-NO4GSsf5MxQ" name="iniciarJuego" method="_SG1kU7axEe-NO4GSsf5MxQ">
+          <ownedComment xmi:id="_SG4noraxEe-NO4GSsf5MxQ">
+            <body>Método principal que ejecuta el ciclo del juego.</body>
+          </ownedComment>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SG85ELaxEe-NO4GSsf5MxQ" name="" memberEnd="_SG85EbaxEe-NO4GSsf5MxQ _SGg0MLaxEe-NO4GSsf5MxQ">
+        <ownedEnd xmi:id="_SG85EbaxEe-NO4GSsf5MxQ" name="" type="_SENHELaxEe-NO4GSsf5MxQ" association="_SG85ELaxEe-NO4GSsf5MxQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SG-HMbaxEe-NO4GSsf5MxQ" name="" memberEnd="_SG-HMraxEe-NO4GSsf5MxQ _SGiCULaxEe-NO4GSsf5MxQ">
+        <ownedEnd xmi:id="_SG-HMraxEe-NO4GSsf5MxQ" name="" type="_SENHELaxEe-NO4GSsf5MxQ" association="_SG-HMbaxEe-NO4GSsf5MxQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SDhxobaxEe-NO4GSsf5MxQ" name="excepciones">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SERYgLaxEe-NO4GSsf5MxQ" name="GestorErrores">
+        <ownedComment xmi:id="_SG4no7axEe-NO4GSsf5MxQ">
+          <body>*&#xD;
+@author Willian</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG1kVLaxEe-NO4GSsf5MxQ" name="mostrarError" specification="_SER_kLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG1kVbaxEe-NO4GSsf5MxQ" name="mensaje">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.err.println(&quot;Error: &quot; + mensaje);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LYLaxEe-NO4GSsf5MxQ" name="manejarExcepcion" specification="_SGXqQbaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2LYbaxEe-NO4GSsf5MxQ" name="e" type="_SGXDMbaxEe-NO4GSsf5MxQ"/>
+          <language>java</language>
+          <body>System.err.println(&quot;Ocurrió un error: &quot; + e.getMessage());&#xD;
+     e.printStackTrace();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LYraxEe-NO4GSsf5MxQ" name="advertencia" specification="_SER_kraxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2LY7axEe-NO4GSsf5MxQ" name="mensaje">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Advertencia: &quot; + mensaje);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_SER_kLaxEe-NO4GSsf5MxQ" name="mostrarError" isStatic="true" method="_SG1kVLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SER_kbaxEe-NO4GSsf5MxQ" name="mensaje">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SER_kraxEe-NO4GSsf5MxQ" name="advertencia" isStatic="true" method="_SG2LYraxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SESmoLaxEe-NO4GSsf5MxQ" name="mensaje">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SGXqQbaxEe-NO4GSsf5MxQ" name="manejarExcepcion" isStatic="true" method="_SG2LYLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SGXqQraxEe-NO4GSsf5MxQ" name="e" type="_SGXDMbaxEe-NO4GSsf5MxQ"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SDhxoraxEe-NO4GSsf5MxQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_SDhxo7axEe-NO4GSsf5MxQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGFWYLaxEe-NO4GSsf5MxQ" name="Scanner"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGQ8kbaxEe-NO4GSsf5MxQ" name="Random"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_SDmqILaxEe-NO4GSsf5MxQ" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGGkgbaxEe-NO4GSsf5MxQ" name="IOException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_SGIZsLaxEe-NO4GSsf5MxQ" name="Serializable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGLdALaxEe-NO4GSsf5MxQ" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGMrIbaxEe-NO4GSsf5MxQ" name="FileInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGNSMbaxEe-NO4GSsf5MxQ" name="FileOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGN5QbaxEe-NO4GSsf5MxQ" name="FileWriter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGPHYbaxEe-NO4GSsf5MxQ" name="ObjectInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGPucbaxEe-NO4GSsf5MxQ" name="ObjectOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGQVgbaxEe-NO4GSsf5MxQ" name="PrintWriter"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_SGXDMLaxEe-NO4GSsf5MxQ" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGXDMbaxEe-NO4GSsf5MxQ" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SDmqIbaxEe-NO4GSsf5MxQ" name="model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SETNsLaxEe-NO4GSsf5MxQ" name="Celda">
+        <ownedComment xmi:id="_SG4npLaxEe-NO4GSsf5MxQ">
+          <body>*&#xD;
+@author Willian</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_SGipYLaxEe-NO4GSsf5MxQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_SGipYbaxEe-NO4GSsf5MxQ" value="1L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGjQcLaxEe-NO4GSsf5MxQ" name="esMina" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGj3gbaxEe-NO4GSsf5MxQ" name="estaRevelada" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGj3g7axEe-NO4GSsf5MxQ" name="estaMarcada" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGkekbaxEe-NO4GSsf5MxQ" name="minasAdyacentes">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_SGciwLaxEe-NO4GSsf5MxQ" client="_SETNsLaxEe-NO4GSsf5MxQ" supplier="_SGIZsLaxEe-NO4GSsf5MxQ" contract="_SGIZsLaxEe-NO4GSsf5MxQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LZLaxEe-NO4GSsf5MxQ" name="Celda" specification="_SEUb0LaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2LZbaxEe-NO4GSsf5MxQ" type="_SETNsLaxEe-NO4GSsf5MxQ" direction="return"/>
+          <language>java</language>
+          <body>this.esMina = false;&#xD;
+     this.estaRevelada = false;&#xD;
+     this.estaMarcada = false;&#xD;
+     this.minasAdyacentes = 0;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LZraxEe-NO4GSsf5MxQ" name="esMina" specification="_SEUb1LaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2LZ7axEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return esMina;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LaLaxEe-NO4GSsf5MxQ" name="setEsMina" specification="_SEVC4LaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2LabaxEe-NO4GSsf5MxQ" name="esMina">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.esMina = esMina;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LaraxEe-NO4GSsf5MxQ" name="estaRevelada" specification="_SEVC4raxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2La7axEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return estaRevelada;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2LbLaxEe-NO4GSsf5MxQ" name="revelar" specification="_SEVp8LaxEe-NO4GSsf5MxQ">
+          <language>java</language>
+          <body>this.estaRevelada = true;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2ycLaxEe-NO4GSsf5MxQ" name="estaMarcada" specification="_SEVp8baxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG2ycbaxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return estaMarcada;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG2ycraxEe-NO4GSsf5MxQ" name="alternarMarca" specification="_SEVp87axEe-NO4GSsf5MxQ">
+          <language>java</language>
+          <body>this.estaMarcada = !this.estaMarcada;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_SEUb0LaxEe-NO4GSsf5MxQ" name="Celda" method="_SG2LZLaxEe-NO4GSsf5MxQ">
+          <eAnnotations xmi:id="_SEUb0baxEe-NO4GSsf5MxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_SEUb0raxEe-NO4GSsf5MxQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_SEUb07axEe-NO4GSsf5MxQ" type="_SETNsLaxEe-NO4GSsf5MxQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEUb1LaxEe-NO4GSsf5MxQ" name="esMina" method="_SG2LZraxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEUb1baxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEVC4LaxEe-NO4GSsf5MxQ" name="setEsMina" method="_SG2LaLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEVC4baxEe-NO4GSsf5MxQ" name="esMina">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEVC4raxEe-NO4GSsf5MxQ" name="estaRevelada" method="_SG2LaraxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEVC47axEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEVp8LaxEe-NO4GSsf5MxQ" name="revelar" method="_SG2LbLaxEe-NO4GSsf5MxQ"/>
+        <ownedOperation xmi:id="_SEVp8baxEe-NO4GSsf5MxQ" name="estaMarcada" method="_SG2ycLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEVp8raxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEVp87axEe-NO4GSsf5MxQ" name="alternarMarca" method="_SG2ycraxEe-NO4GSsf5MxQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SEXfILaxEe-NO4GSsf5MxQ" name="Tablero">
+        <ownedComment xmi:id="_SG4npbaxEe-NO4GSsf5MxQ">
+          <body>*&#xD;
+@author Willian</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_SGlFoLaxEe-NO4GSsf5MxQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_SGlssLaxEe-NO4GSsf5MxQ" value="1L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGlssbaxEe-NO4GSsf5MxQ" name="filas" visibility="private" isLeaf="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGlss7axEe-NO4GSsf5MxQ" name="columnas" visibility="private" isLeaf="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGm60baxEe-NO4GSsf5MxQ" name="minas" visibility="private" isLeaf="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SGoI8baxEe-NO4GSsf5MxQ" name="celdas" type="_SETNsLaxEe-NO4GSsf5MxQ" isReadOnly="true" association="_SG_VULaxEe-NO4GSsf5MxQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SGowALaxEe-NO4GSsf5MxQ" value="*"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_SGe_ALaxEe-NO4GSsf5MxQ" client="_SEXfILaxEe-NO4GSsf5MxQ" supplier="_SGIZsLaxEe-NO4GSsf5MxQ" contract="_SGIZsLaxEe-NO4GSsf5MxQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZgLaxEe-NO4GSsf5MxQ" name="Tablero" specification="_SEZ7YLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG3ZgbaxEe-NO4GSsf5MxQ" name="filas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG3ZgraxEe-NO4GSsf5MxQ" name="columnas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG3Zg7axEe-NO4GSsf5MxQ" name="minas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG3ZhLaxEe-NO4GSsf5MxQ" type="_SEXfILaxEe-NO4GSsf5MxQ" direction="return"/>
+          <language>java</language>
+          <body>this.filas = filas;&#xD;
+     this.columnas = columnas;&#xD;
+     this.minas = minas;&#xD;
+     inicializarTablero(); // Inicializar la matriz de celdas&#xD;
+     colocarMinas();       // Colocar minas aleatoriamente en el tablero&#xD;
+     calcularMinasAdyacentes(); // Calcular las minas adyacentes a cada celda&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZhbaxEe-NO4GSsf5MxQ" name="inicializarTablero" specification="_SEaidraxEe-NO4GSsf5MxQ">
+          <language>java</language>
+          <body>celdas = new Celda[filas][columnas];&#xD;
+     for (int i = 0; i &lt; filas; i++) {&#xD;
+         for (int j = 0; j &lt; columnas; j++) {&#xD;
+             celdas[i][j] = new Celda(); // Crear una nueva celda vacía&#xD;
+         }&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZhraxEe-NO4GSsf5MxQ" name="colocarMinas" specification="_SEbJgLaxEe-NO4GSsf5MxQ">
+          <language>java</language>
+          <body>Random random = new Random();&#xD;
+     int minasColocadas = 0;&#xD;
+     while (minasColocadas &lt; minas) {&#xD;
+         int fila = random.nextInt(filas);       // Generar índice aleatorio para fila&#xD;
+         int columna = random.nextInt(columnas); // Generar índice aleatorio para columna&#xD;
+         if (!celdas[fila][columna].esMina()) {  // Verificar que no haya una mina ya en la celda&#xD;
+             celdas[fila][columna].setEsMina(true); // Colocar mina&#xD;
+             minasColocadas++; // Incrementar el contador de minas colocadas&#xD;
+         }&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3Zh7axEe-NO4GSsf5MxQ" name="calcularMinasAdyacentes" specification="_SEbJgbaxEe-NO4GSsf5MxQ">
+          <language>java</language>
+          <body>for (int i = 0; i &lt; filas; i++) {&#xD;
+         for (int j = 0; j &lt; columnas; j++) {&#xD;
+             if (!celdas[i][j].esMina()) { // Si la celda no tiene mina&#xD;
+                 celdas[i][j].setMinasAdyacentes(contarMinasAdyacentes(i, j)); // Calcular minas adyacentes&#xD;
+             }&#xD;
+         }&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZiLaxEe-NO4GSsf5MxQ" name="contarMinasAdyacentes" specification="_SEbwkLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG3ZibaxEe-NO4GSsf5MxQ" name="fila">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG3ZiraxEe-NO4GSsf5MxQ" name="columna">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG3Zi7axEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int conteo = 0;&#xD;
+     // Recorrer todas las celdas adyacentes (incluyendo diagonales)&#xD;
+     for (int i = -1; i &lt;= 1; i++) {&#xD;
+         for (int j = -1; j &lt;= 1; j++) {&#xD;
+             int nuevaFila = fila + i;       // Índice de la fila adyacente&#xD;
+             int nuevaColumna = columna + j; // Índice de la columna adyacente&#xD;
+             // Verificar que la celda adyacente esté dentro de los límites del tablero&#xD;
+             if (nuevaFila >= 0 &amp;&amp; nuevaFila &lt; filas &amp;&amp; nuevaColumna >= 0 &amp;&amp; nuevaColumna &lt; columnas) {&#xD;
+                 if (celdas[nuevaFila][nuevaColumna].esMina()) { // Si la celda adyacente tiene una mina&#xD;
+                     conteo++; // Incrementar el conteo&#xD;
+                 }&#xD;
+             }&#xD;
+         }&#xD;
+     }&#xD;
+     return conteo; // Retornar el número total de minas adyacentes&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZjLaxEe-NO4GSsf5MxQ" name="guardarEnArchivoBinario" specification="_SEcXoLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG3ZjbaxEe-NO4GSsf5MxQ" name="rutaArchivo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(rutaArchivo))) {&#xD;
+         oos.writeObject(this); // Guardar el objeto actual (Tablero)&#xD;
+         System.out.println(&quot;Juego guardado exitosamente en &quot; + rutaArchivo);&#xD;
+     } catch (IOException e) {&#xD;
+         GestorErrores.manejarExcepcion(e); // Manejar cualquier error de entrada/salida&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZjraxEe-NO4GSsf5MxQ" name="cargarDesdeArchivoBinario" specification="_SEcXoraxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG3Zj7axEe-NO4GSsf5MxQ" name="rutaArchivo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SG3ZkLaxEe-NO4GSsf5MxQ" type="_SEXfILaxEe-NO4GSsf5MxQ" direction="return"/>
+          <language>java</language>
+          <body>try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(rutaArchivo))) {&#xD;
+         return (Tablero) ois.readObject(); // Leer y devolver el objeto guardado&#xD;
+     } catch (IOException | ClassNotFoundException e) {&#xD;
+         GestorErrores.manejarExcepcion(e); // Manejar errores al cargar el archivo&#xD;
+         return null;&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG3ZkbaxEe-NO4GSsf5MxQ" name="getFilas" specification="_SEc-sLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG3ZkraxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return filas;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG4AkLaxEe-NO4GSsf5MxQ" name="getColumnas" specification="_SEeM0LaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG4AkbaxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return columnas;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_SEZ7YLaxEe-NO4GSsf5MxQ" name="Tablero" method="_SG3ZgLaxEe-NO4GSsf5MxQ">
+          <eAnnotations xmi:id="_SEaic7axEe-NO4GSsf5MxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_SEaidLaxEe-NO4GSsf5MxQ" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_SG4npraxEe-NO4GSsf5MxQ">
+            <body>Constructor para inicializar un nuevo tablero con las dimensiones y cantidad de minas especificadas.&#xD;
+     *&#xD;
+     * @param filas    Número de filas del tablero.&#xD;
+     * @param columnas Número de columnas del tablero.&#xD;
+     * @param minas    Número total de minas en el tablero.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_SEaicLaxEe-NO4GSsf5MxQ" name="filas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEaicbaxEe-NO4GSsf5MxQ" name="columnas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEaicraxEe-NO4GSsf5MxQ" name="minas">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEaidbaxEe-NO4GSsf5MxQ" type="_SEXfILaxEe-NO4GSsf5MxQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEaidraxEe-NO4GSsf5MxQ" name="inicializarTablero" visibility="private" method="_SG3ZhbaxEe-NO4GSsf5MxQ">
+          <ownedComment xmi:id="_SG4np7axEe-NO4GSsf5MxQ">
+            <body>Inicializa la matriz de celdas del tablero, creando una nueva Celda para cada posición.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEbJgLaxEe-NO4GSsf5MxQ" name="colocarMinas" visibility="private" method="_SG3ZhraxEe-NO4GSsf5MxQ">
+          <ownedComment xmi:id="_SG4nqLaxEe-NO4GSsf5MxQ">
+            <body>Coloca minas aleatoriamente en el tablero.&#xD;
+     * Se asegura de que no haya dos minas en la misma celda.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEbJgbaxEe-NO4GSsf5MxQ" name="calcularMinasAdyacentes" visibility="private" method="_SG3Zh7axEe-NO4GSsf5MxQ">
+          <ownedComment xmi:id="_SG4nqbaxEe-NO4GSsf5MxQ">
+            <body>Calcula el número de minas adyacentes para cada celda del tablero.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEbwkLaxEe-NO4GSsf5MxQ" name="contarMinasAdyacentes" visibility="private" method="_SG3ZiLaxEe-NO4GSsf5MxQ">
+          <ownedComment xmi:id="_SG4nqraxEe-NO4GSsf5MxQ">
+            <body>Cuenta el número de minas adyacentes a una celda específica.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_SEbwkbaxEe-NO4GSsf5MxQ" name="fila">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEbwkraxEe-NO4GSsf5MxQ" name="columna">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SEbwk7axEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEcXoLaxEe-NO4GSsf5MxQ" name="guardarEnArchivoBinario" method="_SG3ZjLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEcXobaxEe-NO4GSsf5MxQ" name="rutaArchivo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEcXoraxEe-NO4GSsf5MxQ" name="cargarDesdeArchivoBinario" isStatic="true" method="_SG3ZjraxEe-NO4GSsf5MxQ">
+          <ownedComment xmi:id="_SG4nq7axEe-NO4GSsf5MxQ">
+            <body>Carga un tablero desde un archivo binario.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_SEcXo7axEe-NO4GSsf5MxQ" name="rutaArchivo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_SGSKsLaxEe-NO4GSsf5MxQ" type="_SEXfILaxEe-NO4GSsf5MxQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEc-sLaxEe-NO4GSsf5MxQ" name="getFilas" method="_SG3ZkbaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEc-sbaxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SEeM0LaxEe-NO4GSsf5MxQ" name="getColumnas" method="_SG4AkLaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEeM0baxEe-NO4GSsf5MxQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SG_VULaxEe-NO4GSsf5MxQ" name="" memberEnd="_SG_VUbaxEe-NO4GSsf5MxQ _SGoI8baxEe-NO4GSsf5MxQ">
+        <ownedEnd xmi:id="_SG_VUbaxEe-NO4GSsf5MxQ" name="" type="_SEXfILaxEe-NO4GSsf5MxQ" association="_SG_VULaxEe-NO4GSsf5MxQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SDnRMLaxEe-NO4GSsf5MxQ" name="vista">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SEgpELaxEe-NO4GSsf5MxQ" name="VistaConsola">
+        <ownedComment xmi:id="_SG4nrLaxEe-NO4GSsf5MxQ">
+          <body>*&#xD;
+@author Willian</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG4AkraxEe-NO4GSsf5MxQ" name="mostrarTablero" specification="_SGT_4LaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG4Ak7axEe-NO4GSsf5MxQ" name="celdas" type="_SETNsLaxEe-NO4GSsf5MxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SG4AlLaxEe-NO4GSsf5MxQ" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Imprimir encabezado de números (1-10)&#xD;
+     System.out.print(&quot;  &quot;);&#xD;
+     for (int i = 1; i &lt;= celdas[0].length; i++) {&#xD;
+         System.out.print(i + &quot; &quot;);&#xD;
+     }&#xD;
+     System.out.println();&#xD;
+&#xD;
+     // Imprimir filas etiquetadas con letras (A-H)&#xD;
+     char filaEtiqueta = 'A';&#xD;
+     for (int i = 0; i &lt; celdas.length; i++) {&#xD;
+         System.out.print(filaEtiqueta + &quot; &quot;); // Etiqueta de la fila&#xD;
+         filaEtiqueta++;&#xD;
+         for (int j = 0; j &lt; celdas[i].length; j++) {&#xD;
+             if (celdas[i][j].estaRevelada()) {&#xD;
+                 if (celdas[i][j].esMina()) {&#xD;
+                     System.out.print(&quot;X &quot;); // Mostrar mina&#xD;
+                 } else {&#xD;
+                     System.out.print(&quot;V &quot;); // Mostrar espacio vacío seleccionado&#xD;
+                 }&#xD;
+             } else {&#xD;
+                 System.out.print(&quot;. &quot;); // Celda no revelada&#xD;
+             }&#xD;
+         }&#xD;
+         System.out.println();&#xD;
+     }&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SG4AlbaxEe-NO4GSsf5MxQ" name="mostrarMensaje" specification="_SEhQILaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SG4AlraxEe-NO4GSsf5MxQ" name="mensaje">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(mensaje);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_SEhQILaxEe-NO4GSsf5MxQ" name="mostrarMensaje" method="_SG4AlbaxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SEhQIbaxEe-NO4GSsf5MxQ" name="mensaje">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_SGT_4LaxEe-NO4GSsf5MxQ" name="mostrarTablero" method="_SG4AkraxEe-NO4GSsf5MxQ">
+          <ownedParameter xmi:id="_SGUm8LaxEe-NO4GSsf5MxQ" name="celdas" type="_SETNsLaxEe-NO4GSsf5MxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SGUm8baxEe-NO4GSsf5MxQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_R9NHMLaxEe-NO4GSsf5MxQ">
+      <eAnnotations xmi:id="_R9SmwLaxEe-NO4GSsf5MxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_R9WRILaxEe-NO4GSsf5MxQ" base_Package="_RqmUQLaxEe-NO4GSsf5MxQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_SGGkgLaxEe-NO4GSsf5MxQ" base_Element="_SGFWYLaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGHyoLaxEe-NO4GSsf5MxQ" base_Element="_SGGkgbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGJn0LaxEe-NO4GSsf5MxQ" base_Element="_SGIZsLaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGMrILaxEe-NO4GSsf5MxQ" base_Element="_SGLdALaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGNSMLaxEe-NO4GSsf5MxQ" base_Element="_SGMrIbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGN5QLaxEe-NO4GSsf5MxQ" base_Element="_SGNSMbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGPHYLaxEe-NO4GSsf5MxQ" base_Element="_SGN5QbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGPucLaxEe-NO4GSsf5MxQ" base_Element="_SGPHYbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGQVgLaxEe-NO4GSsf5MxQ" base_Element="_SGPucbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGQ8kLaxEe-NO4GSsf5MxQ" base_Element="_SGQVgbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGRjoLaxEe-NO4GSsf5MxQ" base_Element="_SGQ8kbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Array xmi:id="_SGUm8raxEe-NO4GSsf5MxQ" dimensions="2" base_Element="_SGUm8LaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SGXqQLaxEe-NO4GSsf5MxQ" base_Element="_SGXDMbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGhbQLaxEe-NO4GSsf5MxQ" base_Element="_SGg0MLaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGiCUbaxEe-NO4GSsf5MxQ" base_Element="_SGiCULaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGj3gLaxEe-NO4GSsf5MxQ" base_Element="_SGjQcLaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGj3graxEe-NO4GSsf5MxQ" base_Element="_SGj3gbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGkekLaxEe-NO4GSsf5MxQ" base_Element="_SGj3g7axEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGlssraxEe-NO4GSsf5MxQ" base_Element="_SGlssbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGm60LaxEe-NO4GSsf5MxQ" base_Element="_SGlss7axEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SGoI8LaxEe-NO4GSsf5MxQ" base_Element="_SGm60baxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Array xmi:id="_SGowAbaxEe-NO4GSsf5MxQ" dimensions="2" base_Element="_SGoI8baxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SG-HMLaxEe-NO4GSsf5MxQ" base_Element="_SG85ELaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SG-uQLaxEe-NO4GSsf5MxQ" base_Element="_SG-HMbaxEe-NO4GSsf5MxQ"/>
+  <UMLLabProfile:Reference xmi:id="_SG_8YLaxEe-NO4GSsf5MxQ" base_Element="_SG_VULaxEe-NO4GSsf5MxQ"/>
+</xmi:XMI>

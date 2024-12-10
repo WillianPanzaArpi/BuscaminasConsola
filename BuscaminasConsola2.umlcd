@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_RsBQkLaxEe-NO4GSsf5MxQ">
+  <modelElement href="BuscaminasConsola2.uml#_RqmUQLaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SKWLULaxEe-NO4GSsf5MxQ" targetItem="_SKbD0LaxEe-NO4GSsf5MxQ" sourceItem="_SKU9MLaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLKqsbaxEe-NO4GSsf5MxQ" targetItem="_SLUbsLaxEe-NO4GSsf5MxQ" sourceItem="_SLKqsLaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLNG8LaxEe-NO4GSsf5MxQ" targetItem="_SLUb1baxEe-NO4GSsf5MxQ" sourceItem="_SLMf4LaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SLTNkLaxEe-NO4GSsf5MxQ" sourceAnchor="247.0,0.0" targetAnchor="0.0,180.0" target="_SLmvmbaxEe-NO4GSsf5MxQ" source="_SLUbsLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG85ELaxEe-NO4GSsf5MxQ"/>
+    <bendpoints xmi:id="_SQw8YLaxEe-NO4GSsf5MxQ" sourceY="-235" targetX="-353"/>
+    <stereotypes xmi:id="_SLTNkbaxEe-NO4GSsf5MxQ" name="Reference">
+      <modelElement href="BuscaminasConsola2.uml#_SG-HMLaxEe-NO4GSsf5MxQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SLTNkraxEe-NO4GSsf5MxQ" text="">
+      <visualProperties xmi:id="_SQz_sLaxEe-NO4GSsf5MxQ" position="-29.536396375872215,185.95593063928402"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SLTNk7axEe-NO4GSsf5MxQ" aggregationKind="NONE" name="">
+      <modelElement href="BuscaminasConsola2.uml#_SG85EbaxEe-NO4GSsf5MxQ"/>
+      <visualProperties xmi:id="_SQyxkLaxEe-NO4GSsf5MxQ" position="-19.030185837872438,-75.49260382809325"/>
+      <visibility xmi:id="_SLTNlLaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLTNlbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SLTNlraxEe-NO4GSsf5MxQ" aggregationKind="NONE" name="tablero" navigable="true">
+      <modelElement href="BuscaminasConsola2.uml#_SGg0MLaxEe-NO4GSsf5MxQ"/>
+      <visualProperties xmi:id="_SQ0mwLaxEe-NO4GSsf5MxQ" position="-395.4826015442791,187.04196657254704"/>
+      <visibility xmi:id="_SLTNl7axEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLTNmLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SLT0oLaxEe-NO4GSsf5MxQ" sourceAnchor="41.0,0.0" targetAnchor="153.0,89.0" target="_SMOaoLaxEe-NO4GSsf5MxQ" source="_SLUbsLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG-HMbaxEe-NO4GSsf5MxQ"/>
+    <stereotypes xmi:id="_SLT0obaxEe-NO4GSsf5MxQ" name="Reference">
+      <modelElement href="BuscaminasConsola2.uml#_SG-uQLaxEe-NO4GSsf5MxQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SLT0oraxEe-NO4GSsf5MxQ" text="">
+      <visualProperties xmi:id="_SQ104LaxEe-NO4GSsf5MxQ" position="-11.010154540620533,-1.4639357518811948"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SLT0o7axEe-NO4GSsf5MxQ" aggregationKind="NONE" name="">
+      <modelElement href="BuscaminasConsola2.uml#_SG-HMraxEe-NO4GSsf5MxQ"/>
+      <visualProperties xmi:id="_SQ1N0LaxEe-NO4GSsf5MxQ" position="2.0382494386035717,-75.20326860905743"/>
+      <visibility xmi:id="_SLT0pLaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLT0pbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SLT0praxEe-NO4GSsf5MxQ" aggregationKind="NONE" name="vista" navigable="true">
+      <modelElement href="BuscaminasConsola2.uml#_SGiCULaxEe-NO4GSsf5MxQ"/>
+      <visualProperties xmi:id="_SQ2b8LaxEe-NO4GSsf5MxQ" position="-14.16925476975149,46.287008439572105"/>
+      <visibility xmi:id="_SLT0p7axEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLT0qLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLeMsbaxEe-NO4GSsf5MxQ" targetItem="_SLezwLaxEe-NO4GSsf5MxQ" sourceItem="_SLeMsLaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLhQAbaxEe-NO4GSsf5MxQ" targetItem="_SLmvmbaxEe-NO4GSsf5MxQ" sourceItem="_SLhQALaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLh3EbaxEe-NO4GSsf5MxQ" targetItem="_SLmvtLaxEe-NO4GSsf5MxQ" sourceItem="_SLh3ELaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLh3E7axEe-NO4GSsf5MxQ" targetItem="_SLmvw7axEe-NO4GSsf5MxQ" sourceItem="_SLh3EraxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLjFMLaxEe-NO4GSsf5MxQ" targetItem="_SLmvxraxEe-NO4GSsf5MxQ" sourceItem="_SLieILaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLjFMraxEe-NO4GSsf5MxQ" targetItem="_SLmvybaxEe-NO4GSsf5MxQ" sourceItem="_SLjFMbaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLkTULaxEe-NO4GSsf5MxQ" targetItem="_SLmvzLaxEe-NO4GSsf5MxQ" sourceItem="_SLjsQLaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SLkTUraxEe-NO4GSsf5MxQ" targetItem="_SLmv3baxEe-NO4GSsf5MxQ" sourceItem="_SLkTUbaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SLmvkLaxEe-NO4GSsf5MxQ" sourceAnchor="235.0,0.0" targetAnchor="131.0,336.0" target="_SMFQsLaxEe-NO4GSsf5MxQ" source="_SLmvmbaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG_VULaxEe-NO4GSsf5MxQ"/>
+    <stereotypes xmi:id="_SLmvkbaxEe-NO4GSsf5MxQ" name="Reference">
+      <modelElement href="BuscaminasConsola2.uml#_SG_8YLaxEe-NO4GSsf5MxQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SLmvkraxEe-NO4GSsf5MxQ" text="">
+      <visualProperties xmi:id="_SQ3qELaxEe-NO4GSsf5MxQ" position="-19.05024909780866,-135.59733059203828"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SLmvk7axEe-NO4GSsf5MxQ" aggregationKind="NONE" name="">
+      <modelElement href="BuscaminasConsola2.uml#_SG_VUbaxEe-NO4GSsf5MxQ"/>
+      <visualProperties xmi:id="_SQ3DALaxEe-NO4GSsf5MxQ" position="-1.398729852404358,-87.18581176558826"/>
+      <visibility xmi:id="_SLmvlLaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmvlbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SLmvlraxEe-NO4GSsf5MxQ" aggregationKind="NONE" name="celdas" navigable="true">
+      <modelElement href="BuscaminasConsola2.uml#_SGoI8baxEe-NO4GSsf5MxQ"/>
+      <visualProperties xmi:id="_SQ3qEbaxEe-NO4GSsf5MxQ" position="-23.389434485203196,-216.56587904229622"/>
+      <visibility xmi:id="_SLmvl7axEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmvmLaxEe-NO4GSsf5MxQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SMDbgbaxEe-NO4GSsf5MxQ" targetItem="_SMFQsLaxEe-NO4GSsf5MxQ" sourceItem="_SMDbgLaxEe-NO4GSsf5MxQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SMNzkbaxEe-NO4GSsf5MxQ" targetItem="_SMOaoLaxEe-NO4GSsf5MxQ" sourceItem="_SMNzkLaxEe-NO4GSsf5MxQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SKU9MLaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SKWLULaxEe-NO4GSsf5MxQ" text="*&#xA;@author Willian" item="_SKbD0LaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4noLaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLKqsLaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLKqsbaxEe-NO4GSsf5MxQ" text="*&#xD;&#xA;@author Willian" item="_SLUbsLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4nobaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLMf4LaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLNG8LaxEe-NO4GSsf5MxQ" text="Método principal que ejecuta el ciclo del juego." item="_SLUb1baxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4noraxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLeMsLaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLeMsbaxEe-NO4GSsf5MxQ" text="*&#xD;&#xA;@author Willian" item="_SLezwLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4no7axEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLhQALaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLhQAbaxEe-NO4GSsf5MxQ" text="*&#xD;&#xA;@author Willian" item="_SLmvmbaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4npbaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLh3ELaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLh3EbaxEe-NO4GSsf5MxQ" text="Constructor para inicializar un nuevo tablero con las dimensiones y cantidad de minas especificadas.&#xD;&#xA;     *&#xD;&#xA;     * @param filas    Número de filas del tablero.&#xD;&#xA;     * @param columnas Número de columnas del tablero.&#xD;&#xA;     * @param minas    Número total de minas en el tablero." item="_SLmvtLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4npraxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLh3EraxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLh3E7axEe-NO4GSsf5MxQ" text="Inicializa la matriz de celdas del tablero, creando una nueva Celda para cada posición." item="_SLmvw7axEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4np7axEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLieILaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLjFMLaxEe-NO4GSsf5MxQ" text="Coloca minas aleatoriamente en el tablero.&#xD;&#xA;     * Se asegura de que no haya dos minas en la misma celda." item="_SLmvxraxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4nqLaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLjFMbaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLjFMraxEe-NO4GSsf5MxQ" text="Calcula el número de minas adyacentes para cada celda del tablero." item="_SLmvybaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4nqbaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLjsQLaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLkTULaxEe-NO4GSsf5MxQ" text="Cuenta el número de minas adyacentes a una celda específica." item="_SLmvzLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4nqraxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SLkTUbaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SLkTUraxEe-NO4GSsf5MxQ" text="Carga un tablero desde un archivo binario." item="_SLmv3baxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4nq7axEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SMDbgLaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SMDbgbaxEe-NO4GSsf5MxQ" text="*&#xD;&#xA;@author Willian" item="_SMFQsLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4npLaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SMNzkLaxEe-NO4GSsf5MxQ" sourceConnectionVisual="_SMNzkbaxEe-NO4GSsf5MxQ" text="*&#xD;&#xA;@author Willian" item="_SMOaoLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SG4nrLaxEe-NO4GSsf5MxQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SKbD0LaxEe-NO4GSsf5MxQ" comments="_SKU9MLaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SKWLULaxEe-NO4GSsf5MxQ" name="BuscaminasConsola">
+    <modelElement href="BuscaminasConsola2.uml#_SEHAcLaxEe-NO4GSsf5MxQ"/>
+    <visualProperties xmi:id="_SKcR8LaxEe-NO4GSsf5MxQ" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SKcR8baxEe-NO4GSsf5MxQ" label="+"/>
+    <operations xmi:id="_SKcR8raxEe-NO4GSsf5MxQ" name="main" staticOperation="true">
+      <modelElement href="BuscaminasConsola2.uml#_SELR4LaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SKcR87axEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SKcR9LaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SKcR9baxEe-NO4GSsf5MxQ" name="args">
+        <modelElement href="BuscaminasConsola2.uml#_SELR4baxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SKcR9raxEe-NO4GSsf5MxQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_SKcR97axEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SLUbsLaxEe-NO4GSsf5MxQ" comments="_SLKqsLaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLKqsbaxEe-NO4GSsf5MxQ" name="Controlador" associationsOut="_SLTNkLaxEe-NO4GSsf5MxQ _SLT0oLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SENHELaxEe-NO4GSsf5MxQ"/>
+    <visualProperties xmi:id="_SLUbsbaxEe-NO4GSsf5MxQ" position="-105.0,593.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SLUbsraxEe-NO4GSsf5MxQ" label="+"/>
+    <attributes xmi:id="_SLUbs7axEe-NO4GSsf5MxQ" name="tablero">
+      <modelElement href="BuscaminasConsola2.uml#_SGg0MLaxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SLUbtLaxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGhbQLaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SLUbtbaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLUbtraxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SLUbt7axEe-NO4GSsf5MxQ" name="Tablero">
+        <modelElement href="BuscaminasConsola2.uml#_SEXfILaxEe-NO4GSsf5MxQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SLUbuLaxEe-NO4GSsf5MxQ" name="vista">
+      <modelElement href="BuscaminasConsola2.uml#_SGiCULaxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SLUbubaxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGiCUbaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SLUburaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLUbu7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SLUbvLaxEe-NO4GSsf5MxQ" name="VistaConsola">
+        <modelElement href="BuscaminasConsola2.uml#_SEgpELaxEe-NO4GSsf5MxQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SLUbvbaxEe-NO4GSsf5MxQ" name="Controlador">
+      <modelElement href="BuscaminasConsola2.uml#_SEOVMLaxEe-NO4GSsf5MxQ"/>
+      <keywords xmi:id="_SLUbvraxEe-NO4GSsf5MxQ" keyword="create"/>
+      <visibility xmi:id="_SLUbv7axEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLUbwLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLUbwbaxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEOVNraxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLUbwraxEe-NO4GSsf5MxQ" name="Controlador">
+          <modelElement href="BuscaminasConsola2.uml#_SENHELaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLUbw7axEe-NO4GSsf5MxQ" name="filas">
+        <modelElement href="BuscaminasConsola2.uml#_SEOVMbaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLUbxLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLUbxbaxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SLUbxraxEe-NO4GSsf5MxQ" name="columnas">
+        <modelElement href="BuscaminasConsola2.uml#_SEOVMraxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLUbx7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLUbyLaxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SLUbybaxEe-NO4GSsf5MxQ" name="minas">
+        <modelElement href="BuscaminasConsola2.uml#_SEOVM7axEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLUbyraxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLUby7axEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLUbzLaxEe-NO4GSsf5MxQ" name="Controlador">
+      <modelElement href="BuscaminasConsola2.uml#_SEQKYLaxEe-NO4GSsf5MxQ"/>
+      <keywords xmi:id="_SLUbzbaxEe-NO4GSsf5MxQ" keyword="create"/>
+      <visibility xmi:id="_SLUbzraxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLUbz7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLUb0LaxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEQKZLaxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLUb0baxEe-NO4GSsf5MxQ" name="Controlador">
+          <modelElement href="BuscaminasConsola2.uml#_SENHELaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLUb0raxEe-NO4GSsf5MxQ" name="rutaArchivo">
+        <modelElement href="BuscaminasConsola2.uml#_SEQKYbaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLUb07axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLUb1LaxEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLUb1baxEe-NO4GSsf5MxQ" comments="_SLMf4LaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLNG8LaxEe-NO4GSsf5MxQ" name="iniciarJuego">
+      <modelElement href="BuscaminasConsola2.uml#_SEQxcLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLUb1raxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLUb17axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SLezwLaxEe-NO4GSsf5MxQ" comments="_SLeMsLaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLeMsbaxEe-NO4GSsf5MxQ" name="GestorErrores">
+    <modelElement href="BuscaminasConsola2.uml#_SERYgLaxEe-NO4GSsf5MxQ"/>
+    <visualProperties xmi:id="_SLezwbaxEe-NO4GSsf5MxQ" position="0.0,779.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SLezwraxEe-NO4GSsf5MxQ" label="+"/>
+    <operations xmi:id="_SLezw7axEe-NO4GSsf5MxQ" name="mostrarError" staticOperation="true">
+      <modelElement href="BuscaminasConsola2.uml#_SER_kLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLezxLaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLezxbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SLezxraxEe-NO4GSsf5MxQ" name="mensaje">
+        <modelElement href="BuscaminasConsola2.uml#_SER_kbaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLezx7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLezyLaxEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLezybaxEe-NO4GSsf5MxQ" name="advertencia" staticOperation="true">
+      <modelElement href="BuscaminasConsola2.uml#_SER_kraxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLezyraxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLezy7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SLezzLaxEe-NO4GSsf5MxQ" name="mensaje">
+        <modelElement href="BuscaminasConsola2.uml#_SESmoLaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLezzbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLezzraxEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLezz7axEe-NO4GSsf5MxQ" name="manejarExcepcion" staticOperation="true">
+      <modelElement href="BuscaminasConsola2.uml#_SGXqQbaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLez0LaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLez0baxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SLez0raxEe-NO4GSsf5MxQ" name="e">
+        <modelElement href="BuscaminasConsola2.uml#_SGXqQraxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLez07axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLez1LaxEe-NO4GSsf5MxQ" name="Exception">
+          <modelElement href="BuscaminasConsola2.uml#_SGXDMbaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SLmvmbaxEe-NO4GSsf5MxQ" comments="_SLhQALaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLhQAbaxEe-NO4GSsf5MxQ" name="Tablero" associationsIn="_SLTNkLaxEe-NO4GSsf5MxQ" associationsOut="_SLmvkLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SEXfILaxEe-NO4GSsf5MxQ"/>
+    <visualProperties xmi:id="_SLmvmraxEe-NO4GSsf5MxQ" position="495.0,178.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SLmvm7axEe-NO4GSsf5MxQ" label="+"/>
+    <attributes xmi:id="_SLmvnLaxEe-NO4GSsf5MxQ" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="BuscaminasConsola2.uml#_SGlFoLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmvnbaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvnraxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SLmvn7axEe-NO4GSsf5MxQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SLmvoLaxEe-NO4GSsf5MxQ" name="filas">
+      <modelElement href="BuscaminasConsola2.uml#_SGlssbaxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SLmvobaxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGlssraxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SLmvoraxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvo7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SLmvpLaxEe-NO4GSsf5MxQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SLmvpbaxEe-NO4GSsf5MxQ" name="columnas">
+      <modelElement href="BuscaminasConsola2.uml#_SGlss7axEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SLmvpraxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGm60LaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SLmvp7axEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvqLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SLmvqbaxEe-NO4GSsf5MxQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SLmvqraxEe-NO4GSsf5MxQ" name="minas">
+      <modelElement href="BuscaminasConsola2.uml#_SGm60baxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SLmvq7axEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGoI8LaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SLmvrLaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvrbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SLmvrraxEe-NO4GSsf5MxQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SLmvr7axEe-NO4GSsf5MxQ" name="celdas">
+      <modelElement href="BuscaminasConsola2.uml#_SGoI8baxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SLmvsLaxEe-NO4GSsf5MxQ" name="Array">
+        <modelElement href="BuscaminasConsola2.uml#_SGowAbaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SLmvsbaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmvsraxEe-NO4GSsf5MxQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SLmvs7axEe-NO4GSsf5MxQ" name="Celda">
+        <modelElement href="BuscaminasConsola2.uml#_SETNsLaxEe-NO4GSsf5MxQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SLmvtLaxEe-NO4GSsf5MxQ" comments="_SLh3ELaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLh3EbaxEe-NO4GSsf5MxQ" name="Tablero">
+      <modelElement href="BuscaminasConsola2.uml#_SEZ7YLaxEe-NO4GSsf5MxQ"/>
+      <keywords xmi:id="_SLmvtbaxEe-NO4GSsf5MxQ" keyword="create"/>
+      <visibility xmi:id="_SLmvtraxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmvt7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLmvuLaxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEaidbaxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLmvubaxEe-NO4GSsf5MxQ" name="Tablero">
+          <modelElement href="BuscaminasConsola2.uml#_SEXfILaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLmvuraxEe-NO4GSsf5MxQ" name="filas">
+        <modelElement href="BuscaminasConsola2.uml#_SEaicLaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmvu7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmvvLaxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SLmvvbaxEe-NO4GSsf5MxQ" name="columnas">
+        <modelElement href="BuscaminasConsola2.uml#_SEaicbaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmvvraxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmvv7axEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SLmvwLaxEe-NO4GSsf5MxQ" name="minas">
+        <modelElement href="BuscaminasConsola2.uml#_SEaicraxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmvwbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmvwraxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLmvw7axEe-NO4GSsf5MxQ" comments="_SLh3EraxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLh3E7axEe-NO4GSsf5MxQ" name="inicializarTablero">
+      <modelElement href="BuscaminasConsola2.uml#_SEaidraxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmvxLaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvxbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SLmvxraxEe-NO4GSsf5MxQ" comments="_SLieILaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLjFMLaxEe-NO4GSsf5MxQ" name="colocarMinas">
+      <modelElement href="BuscaminasConsola2.uml#_SEbJgLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmvx7axEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvyLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SLmvybaxEe-NO4GSsf5MxQ" comments="_SLjFMbaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLjFMraxEe-NO4GSsf5MxQ" name="calcularMinasAdyacentes">
+      <modelElement href="BuscaminasConsola2.uml#_SEbJgbaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmvyraxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvy7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SLmvzLaxEe-NO4GSsf5MxQ" comments="_SLjsQLaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLkTULaxEe-NO4GSsf5MxQ" name="contarMinasAdyacentes">
+      <modelElement href="BuscaminasConsola2.uml#_SEbwkLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmvzbaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SLmvzraxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLmvz7axEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEbwk7axEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLmv0LaxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLmv0baxEe-NO4GSsf5MxQ" name="fila">
+        <modelElement href="BuscaminasConsola2.uml#_SEbwkbaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmv0raxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmv07axEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SLmv1LaxEe-NO4GSsf5MxQ" name="columna">
+        <modelElement href="BuscaminasConsola2.uml#_SEbwkraxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmv1baxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmv1raxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLmv17axEe-NO4GSsf5MxQ" name="guardarEnArchivoBinario">
+      <modelElement href="BuscaminasConsola2.uml#_SEcXoLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmv2LaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmv2baxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SLmv2raxEe-NO4GSsf5MxQ" name="rutaArchivo">
+        <modelElement href="BuscaminasConsola2.uml#_SEcXobaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmv27axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmv3LaxEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLmv3baxEe-NO4GSsf5MxQ" comments="_SLkTUbaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SLkTUraxEe-NO4GSsf5MxQ" name="cargarDesdeArchivoBinario" staticOperation="true">
+      <modelElement href="BuscaminasConsola2.uml#_SEcXoraxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmv3raxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmv37axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLmv4LaxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SGSKsLaxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLmv4baxEe-NO4GSsf5MxQ" name="Tablero">
+          <modelElement href="BuscaminasConsola2.uml#_SEXfILaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLmv4raxEe-NO4GSsf5MxQ" name="rutaArchivo">
+        <modelElement href="BuscaminasConsola2.uml#_SEcXo7axEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SLmv47axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SLmv5LaxEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLmv5baxEe-NO4GSsf5MxQ" name="getFilas">
+      <modelElement href="BuscaminasConsola2.uml#_SEc-sLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmv5raxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmv57axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLmv6LaxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEc-sbaxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLmv6baxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SLmv6raxEe-NO4GSsf5MxQ" name="getColumnas">
+      <modelElement href="BuscaminasConsola2.uml#_SEeM0LaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SLmv67axEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SLmv7LaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLmv7baxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEeM0baxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SLmv7raxEe-NO4GSsf5MxQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SMFQsLaxEe-NO4GSsf5MxQ" comments="_SMDbgLaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SMDbgbaxEe-NO4GSsf5MxQ" name="Celda" associationsIn="_SLmvkLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SETNsLaxEe-NO4GSsf5MxQ"/>
+    <visualProperties xmi:id="_SMFQsbaxEe-NO4GSsf5MxQ" position="599.0,-213.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SMFQsraxEe-NO4GSsf5MxQ" label="+"/>
+    <attributes xmi:id="_SMFQs7axEe-NO4GSsf5MxQ" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="BuscaminasConsola2.uml#_SGipYLaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQtLaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SMFQtbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SMFQtraxEe-NO4GSsf5MxQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SMFQt7axEe-NO4GSsf5MxQ" name="esMina">
+      <modelElement href="BuscaminasConsola2.uml#_SGjQcLaxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SMFQuLaxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGj3gLaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SMFQubaxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SMFQuraxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SMFQu7axEe-NO4GSsf5MxQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SMFQvLaxEe-NO4GSsf5MxQ" name="estaRevelada">
+      <modelElement href="BuscaminasConsola2.uml#_SGj3gbaxEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SMFQvbaxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGj3graxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SMFQvraxEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SMFQv7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SMFQwLaxEe-NO4GSsf5MxQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SMFQwbaxEe-NO4GSsf5MxQ" name="estaMarcada">
+      <modelElement href="BuscaminasConsola2.uml#_SGj3g7axEe-NO4GSsf5MxQ"/>
+      <stereotypes xmi:id="_SMFQwraxEe-NO4GSsf5MxQ" name="LegacyStyledElement">
+        <modelElement href="BuscaminasConsola2.uml#_SGkekLaxEe-NO4GSsf5MxQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SMFQw7axEe-NO4GSsf5MxQ" label="-"/>
+      <cardinality xmi:id="_SMFQxLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SMFQxbaxEe-NO4GSsf5MxQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SMFQxraxEe-NO4GSsf5MxQ" name="minasAdyacentes">
+      <modelElement href="BuscaminasConsola2.uml#_SGkekbaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQx7axEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQyLaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SMFQybaxEe-NO4GSsf5MxQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SMFQyraxEe-NO4GSsf5MxQ" name="Celda">
+      <modelElement href="BuscaminasConsola2.uml#_SEUb0LaxEe-NO4GSsf5MxQ"/>
+      <keywords xmi:id="_SMFQy7axEe-NO4GSsf5MxQ" keyword="create"/>
+      <visibility xmi:id="_SMFQzLaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQzbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SMFQzraxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEUb07axEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SMFQz7axEe-NO4GSsf5MxQ" name="Celda">
+          <modelElement href="BuscaminasConsola2.uml#_SETNsLaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SMFQ0LaxEe-NO4GSsf5MxQ" name="esMina">
+      <modelElement href="BuscaminasConsola2.uml#_SEUb1LaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQ0baxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQ0raxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SMFQ07axEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEUb1baxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SMFQ1LaxEe-NO4GSsf5MxQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SMFQ1baxEe-NO4GSsf5MxQ" name="setEsMina">
+      <modelElement href="BuscaminasConsola2.uml#_SEVC4LaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQ1raxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQ17axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SMFQ2LaxEe-NO4GSsf5MxQ" name="esMina">
+        <modelElement href="BuscaminasConsola2.uml#_SEVC4baxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SMFQ2baxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SMFQ2raxEe-NO4GSsf5MxQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SMFQ27axEe-NO4GSsf5MxQ" name="estaRevelada">
+      <modelElement href="BuscaminasConsola2.uml#_SEVC4raxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQ3LaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQ3baxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SMFQ3raxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEVC47axEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SMFQ37axEe-NO4GSsf5MxQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SMFQ4LaxEe-NO4GSsf5MxQ" name="revelar">
+      <modelElement href="BuscaminasConsola2.uml#_SEVp8LaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQ4baxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQ4raxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SMFQ47axEe-NO4GSsf5MxQ" name="estaMarcada">
+      <modelElement href="BuscaminasConsola2.uml#_SEVp8baxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQ5LaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQ5baxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SMFQ5raxEe-NO4GSsf5MxQ">
+        <modelElement href="BuscaminasConsola2.uml#_SEVp8raxEe-NO4GSsf5MxQ"/>
+        <type xmi:id="_SMFQ57axEe-NO4GSsf5MxQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SMFQ6LaxEe-NO4GSsf5MxQ" name="alternarMarca">
+      <modelElement href="BuscaminasConsola2.uml#_SEVp87axEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMFQ6baxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMFQ6raxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SMOaoLaxEe-NO4GSsf5MxQ" comments="_SMNzkLaxEe-NO4GSsf5MxQ" targetConnectionVisual="_SMNzkbaxEe-NO4GSsf5MxQ" name="VistaConsola" associationsIn="_SLT0oLaxEe-NO4GSsf5MxQ">
+    <modelElement href="BuscaminasConsola2.uml#_SEgpELaxEe-NO4GSsf5MxQ"/>
+    <visualProperties xmi:id="_SMOaobaxEe-NO4GSsf5MxQ" position="-217.0,449.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SMOaoraxEe-NO4GSsf5MxQ" label="+"/>
+    <operations xmi:id="_SMOao7axEe-NO4GSsf5MxQ" name="mostrarMensaje">
+      <modelElement href="BuscaminasConsola2.uml#_SEhQILaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMOapLaxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMOapbaxEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SMOapraxEe-NO4GSsf5MxQ" name="mensaje">
+        <modelElement href="BuscaminasConsola2.uml#_SEhQIbaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SMOap7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SMOaqLaxEe-NO4GSsf5MxQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SMOaqbaxEe-NO4GSsf5MxQ" name="mostrarTablero">
+      <modelElement href="BuscaminasConsola2.uml#_SGT_4LaxEe-NO4GSsf5MxQ"/>
+      <visibility xmi:id="_SMOaqraxEe-NO4GSsf5MxQ" label="+"/>
+      <cardinality xmi:id="_SMOaq7axEe-NO4GSsf5MxQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SMOarLaxEe-NO4GSsf5MxQ" name="celdas">
+        <modelElement href="BuscaminasConsola2.uml#_SGUm8LaxEe-NO4GSsf5MxQ"/>
+        <cardinality xmi:id="_SMOarbaxEe-NO4GSsf5MxQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_SMOarraxEe-NO4GSsf5MxQ" name="Celda">
+          <modelElement href="BuscaminasConsola2.uml#_SETNsLaxEe-NO4GSsf5MxQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
